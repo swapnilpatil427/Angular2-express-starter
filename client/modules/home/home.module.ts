@@ -4,16 +4,13 @@ import { NgSemanticModule } from "ng-semantic";
 
 import { HomeComponent } from "./home.component";
 import { routing } from "./home.routing";
-import { SharedModule } from "../shared/shared.module";
-import { ContactModule } from "../contact/contact.module";
+
 
 @NgModule({
     imports: [
         HttpModule,
         routing,
-        SharedModule.forRoot(),
-        NgSemanticModule,
-        ContactModule
+        NgSemanticModule
     ],
     declarations: [ HomeComponent ],
     bootstrap:    [ HomeComponent ]
